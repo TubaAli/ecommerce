@@ -1,0 +1,84 @@
+<% layout('layout') -%>
+<div class="container">
+  <div class="row section" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="col-md-4"><img  src="<%= product.image %>" class="img-responsive img-thumbnail img-circle" width=100% hight=100%></div>
+      <div class="col-md-8">
+        <div><h1>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am <%= product.name %> , I am Road Safety product", "Use Me , And be Safe on Roads." ]'>
+        <span class="wrap"></span></a></h1></div>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Description</a></h3>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body content"><%= product.spec %></div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Application</a></h3>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body content"><%= product.uses %>
+              </div>
+            </div>
+          </div>
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">BIS Standard Approved</a></h3>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body content"><%= product.bis %>
+            </div>
+          </div>
+        </div>
+        </div>
+      <br><hr>
+      <div class="well" data-aos="flip-right"data-aos-duration="2000" font:"lobster"><h3>Want to buy safest and cheapest version ?</h3></div>
+      <div class="section" data-aos="zoom-in">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Option1</a></li>
+          <li><a data-toggle="tab" href="#menu1">Option2</a></li>
+          <li><a data-toggle="tab" href="#menu2">Option3</a></li>
+        </ul>
+        <div class="tab-content">
+
+          <div id="home" class="tab-pane fade in active">
+            <h3 >Shop 1</h3><br>
+                <img src="<%= product.option1 %>" class="img-responsive img-thumbnail img-rounded" width=250px hight=250px><br><hr>
+                <% if(user) { %>
+                    <button class="btn btn-warning"><a href="<%= product.option1 %>" class="hvr-icon-pulse-grow">Buy Now</a></button>
+                <% } else { %>
+                    <a href="/signup" class="btn btn-warning btn-lg"> Signup to begin buying</a>
+                <% } %>
+              </div>
+
+              <div id="menu1" class="tab-pane fade in">
+                <h3 >Shop 2</h3><br>
+                <img src="<%= product.option2 %>" class="img-responsive img-thumbnail img-rounded" width=250px hight=250px><br><hr>
+                <% if(user) { %>
+                    <button class="btn btn-warning"><a href="<%= product.option2 %>" class="hvr-icon-pulse-grow">Buy Now</a></button>
+                <% } else { %>
+                    <a href="/signup" class="btn btn-warning btn-lg"> Signup to begin buying</a>
+                <% } %>
+              </div>
+
+              <div id="menu2" class="tab-pane fade in">
+                <h3 >Shop 3</h3><br>
+                <img src="<%= product.option3 %>" class="img-responsive img-thumbnail img-rounded" width=250px hight=250px><br><hr>
+                <% if(user) { %>
+                    <button class="btn btn-warning"><a href="<%= product.option3 %>" class="hvr-icon-pulse-grow">Buy Now</a></button>
+                <% } else { %>
+                    <a href="/signup" class="btn btn-warning btn-lg"> Signup to begin buying</a>
+                <% } %>
+              </div>
+
+            </div>
+            <h3><%= product.name %></h3><br>
+            <form method="post" action="/product/<%=product._id %>">
+            <input type="hidden" name="product_id" id="quantity" value="<%= product._id %>">
+            <input type="hidden" name="product_id" id="quantity" value="<%= product.price %>">
+            <div class="well well-sm"><h4>Price: <%= product.price %>  <i class="fa fa-inr"></i></h4></div>
+          </form>
+        </div>
+      </div>
+      </div>

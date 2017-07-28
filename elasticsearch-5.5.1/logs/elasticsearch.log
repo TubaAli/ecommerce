@@ -1,0 +1,26 @@
+[2017-07-28T11:58:52,684][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-07-28T11:58:55,380][INFO ][o.e.e.NodeEnvironment    ] [DK-YGlw] using [1] data paths, mounts [[(C:)]], net usable_space [153.2gb], net total_space [232.7gb], spins? [unknown], types [NTFS]
+[2017-07-28T11:58:55,382][INFO ][o.e.e.NodeEnvironment    ] [DK-YGlw] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-07-28T11:58:55,394][INFO ][o.e.n.Node               ] node name [DK-YGlw] derived from node ID [DK-YGlwySGm7XpZmVM_RRQ]; set [node.name] to override
+[2017-07-28T11:58:55,396][INFO ][o.e.n.Node               ] version[5.5.1], pid[11508], build[19c13d0/2017-07-18T20:44:24.823Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-07-28T11:58:55,397][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\elasticsearch-5.5.1]
+[2017-07-28T11:59:12,432][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [aggs-matrix-stats]
+[2017-07-28T11:59:12,434][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [ingest-common]
+[2017-07-28T11:59:12,435][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [lang-expression]
+[2017-07-28T11:59:12,435][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [lang-groovy]
+[2017-07-28T11:59:12,436][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [lang-mustache]
+[2017-07-28T11:59:12,437][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [lang-painless]
+[2017-07-28T11:59:12,437][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [parent-join]
+[2017-07-28T11:59:12,438][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [percolator]
+[2017-07-28T11:59:12,439][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [reindex]
+[2017-07-28T11:59:12,439][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [transport-netty3]
+[2017-07-28T11:59:12,440][INFO ][o.e.p.PluginsService     ] [DK-YGlw] loaded module [transport-netty4]
+[2017-07-28T11:59:12,441][INFO ][o.e.p.PluginsService     ] [DK-YGlw] no plugins loaded
+[2017-07-28T12:00:36,983][INFO ][o.e.d.DiscoveryModule    ] [DK-YGlw] using discovery type [zen]
+[2017-07-28T12:00:46,131][INFO ][o.e.n.Node               ] initialized
+[2017-07-28T12:00:46,132][INFO ][o.e.n.Node               ] [DK-YGlw] starting ...
+[2017-07-28T12:00:52,971][INFO ][o.e.t.TransportService   ] [DK-YGlw] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2017-07-28T12:00:58,445][INFO ][o.e.c.s.ClusterService   ] [DK-YGlw] new_master {DK-YGlw}{DK-YGlwySGm7XpZmVM_RRQ}{t34RxuhfQF2eC4F77s1-Kw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-07-28T12:00:59,354][INFO ][o.e.g.GatewayService     ] [DK-YGlw] recovered [0] indices into cluster_state
+[2017-07-28T12:01:00,762][INFO ][o.e.h.n.Netty4HttpServerTransport] [DK-YGlw] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2017-07-28T12:01:00,763][INFO ][o.e.n.Node               ] [DK-YGlw] started
